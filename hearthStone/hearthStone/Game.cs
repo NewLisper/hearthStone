@@ -29,6 +29,11 @@ namespace hearthStone
 
         static void Main(string[] args)
         {
+            InitCardsIntoXml initCardsIntoXml = new InitCardsIntoXml();
+            List<Card> card1 = initCardsIntoXml.getAllCards();
+            List<Card> card2 = initCardsIntoXml.getAllCards();
+            Console.WriteLine(card2.Count());
+            Game game = new Game(new Tuple<List<Card>, List<Card>>(card1,card2));
             Hero h1 = new Hero(30, "LL");
             Console.WriteLine(h1.Hp);
             Console.ReadKey(true);
