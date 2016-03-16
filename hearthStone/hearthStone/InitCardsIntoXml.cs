@@ -11,14 +11,31 @@ namespace hearthStone
     class InitCardsIntoXml
     {
         private static String fileLocation = "..//..//cards.xml";
-        public static IEnumerable<XElement> getAllCards()
+        private static String Crystal = "Crystal";
+        private static String Hp = "Hp";
+        private static string Attack = "Attack";
+
+        public List<Card> transformXElementToCard(IEnumerable<XElement> cardsList)
+        {
+            List<Card> resultList = new List<Card>();
+            foreach (XElement e in cardsList)
+            {
+                int crystal = Convert.ToInt32(e.Element(Crystal).Value);
+                int attack = Convert.ToInt32(e.Element(Attack).Value);
+                int hp = Convert.ToInt32(e.Element(Hp).Value);
+                Card c = new Card(crystal,hp,attack);
+                resultList.Add(c);
+            }
+            return resultList;
+        }
+        public List<Card> getAllCards()
         {
             XDocument doc = XDocument.Load(fileLocation);
             IEnumerable<XElement> cardsList =
                 from c in doc.Root.Elements()
                 select c;
-            return cardsList;
-
+            return transformXElementToCard(cardsList);
+            
         }
         public static void InitCards() {
             XDocument card = new XDocument(
