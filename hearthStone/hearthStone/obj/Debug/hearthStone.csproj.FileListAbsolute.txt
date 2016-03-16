@@ -1,0 +1,9 @@
+D:\hearthStoneProj\hearthStone\hearthStone\bin\Debug\hearthStone.exe.config
+D:\hearthStoneProj\hearthStone\hearthStone\bin\Debug\hearthStone.exe
+D:\hearthStoneProj\hearthStone\hearthStone\bin\Debug\hearthStone.pdb
+D:\hearthStoneProj\hearthStone\hearthStone\obj\Debug\hearthStone.csprojResolveAssemblyReference.cache
+D:\hearthStoneProj\hearthStone\hearthStone\obj\Debug\hearthStone.exe
+D:\hearthStoneProj\hearthStone\hearthStone\obj\Debug\hearthStone.pdb
+C:\Users\LL\Desktop\hearthStone\hearthStone\bin\Debug\hearthStone.exe.config
+C:\Users\LL\Desktop\hearthStone\hearthStone\obj\Debug\hearthStone.exe
+C:\Users\LL\Desktop\hearthStone\hearthStone\obj\Debug\hearthStone.pdb
