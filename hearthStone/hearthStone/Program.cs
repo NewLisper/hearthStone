@@ -10,7 +10,7 @@ namespace hearthStone
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("ccc");
+            Console.WriteLine("fke");
         }
     }
 }
