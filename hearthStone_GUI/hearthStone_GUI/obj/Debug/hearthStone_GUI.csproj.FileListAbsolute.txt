@@ -7,3 +7,12 @@ E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.csproj.G
 E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.exe
 E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.pdb
 E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.csprojResolveAssemblyReference.cache
+E:\project\hearthstone-Basics\hearthStone\hearthStone_GUI\hearthStone_GUI\bin\Debug\hearthStone_GUI.exe.config
+E:\project\hearthstone-Basics\hearthStone\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.exe
+E:\project\hearthstone-Basics\hearthStone\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.pdb
+E:\project\hearthstone-Basics\hearthStone\hearthStone_GUI\hearthStone_GUI\bin\Debug\hearthStone_GUI.exe
+E:\project\hearthstone-Basics\hearthStone\hearthStone_GUI\hearthStone_GUI\bin\Debug\hearthStone_GUI.pdb
+E:\project\hearthstone-Basics\hearthStone\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.csprojResolveAssemblyReference.cache
+E:\project\hearthstone-Basics\hearthStone\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.Properties.Resources.resources
+E:\project\hearthstone-Basics\hearthStone\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.csproj.GenerateResource.Cache
+E:\project\hearthstone-Basics\hearthStone\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.HearthStoneInterface.resources

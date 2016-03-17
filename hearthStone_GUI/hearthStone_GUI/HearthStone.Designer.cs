@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.my_crystal_num = new System.Windows.Forms.TextBox();
+            this.my_hero_hp = new System.Windows.Forms.TextBox();
+            this.my_crystal_num_label = new System.Windows.Forms.Label();
+            this.my_hero_name = new System.Windows.Forms.TextBox();
+            this.my_hero_hp_label = new System.Windows.Forms.Label();
+            this.my_hero_name_label = new System.Windows.Forms.Label();
             this.my_bat_card_7 = new System.Windows.Forms.Button();
             this.my_bat_card_6 = new System.Windows.Forms.Button();
             this.my_bat_card_5 = new System.Windows.Forms.Button();
@@ -41,10 +43,12 @@
             this.my_bat_card_2 = new System.Windows.Forms.Button();
             this.my_bat_card_1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.opp_crystal_num = new System.Windows.Forms.TextBox();
+            this.opp_hero_hp = new System.Windows.Forms.TextBox();
+            this.opp_hero_name = new System.Windows.Forms.TextBox();
+            this.opp_crystal_num_label = new System.Windows.Forms.Label();
+            this.opp_hero_hp_label = new System.Windows.Forms.Label();
+            this.opp_hero_name_label = new System.Windows.Forms.Label();
             this.opp_bat_card_7 = new System.Windows.Forms.Button();
             this.opp_bat_card_6 = new System.Windows.Forms.Button();
             this.opp_bat_card_5 = new System.Windows.Forms.Button();
@@ -191,48 +195,67 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(286, 525);
+            this.panel1.Controls.Add(this.my_crystal_num);
+            this.panel1.Controls.Add(this.my_hero_hp);
+            this.panel1.Controls.Add(this.my_crystal_num_label);
+            this.panel1.Controls.Add(this.my_hero_name);
+            this.panel1.Controls.Add(this.my_hero_hp_label);
+            this.panel1.Controls.Add(this.my_hero_name_label);
+            this.panel1.Location = new System.Drawing.Point(252, 508);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(302, 97);
+            this.panel1.Size = new System.Drawing.Size(345, 132);
             this.panel1.TabIndex = 1;
             // 
-            // textBox2
+            // my_crystal_num
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 57);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(146, 21);
-            this.textBox2.TabIndex = 1;
+            this.my_crystal_num.Location = new System.Drawing.Point(113, 98);
+            this.my_crystal_num.Name = "my_crystal_num";
+            this.my_crystal_num.Size = new System.Drawing.Size(58, 21);
+            this.my_crystal_num.TabIndex = 107;
             // 
-            // textBox1
+            // my_hero_hp
             // 
-            this.textBox1.Location = new System.Drawing.Point(96, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 21);
-            this.textBox1.TabIndex = 1;
+            this.my_hero_hp.Location = new System.Drawing.Point(113, 57);
+            this.my_hero_hp.Name = "my_hero_hp";
+            this.my_hero_hp.Size = new System.Drawing.Size(58, 21);
+            this.my_hero_hp.TabIndex = 1;
             // 
-            // label2
+            // my_crystal_num_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(63, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "HP";
+            this.my_crystal_num_label.AutoSize = true;
+            this.my_crystal_num_label.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.my_crystal_num_label.Location = new System.Drawing.Point(4, 98);
+            this.my_crystal_num_label.Name = "my_crystal_num_label";
+            this.my_crystal_num_label.Size = new System.Drawing.Size(96, 16);
+            this.my_crystal_num_label.TabIndex = 106;
+            this.my_crystal_num_label.Text = "Crystal num";
             // 
-            // label1
+            // my_hero_name
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(7, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hero Name";
+            this.my_hero_name.Location = new System.Drawing.Point(113, 17);
+            this.my_hero_name.Name = "my_hero_name";
+            this.my_hero_name.Size = new System.Drawing.Size(156, 21);
+            this.my_hero_name.TabIndex = 1;
+            // 
+            // my_hero_hp_label
+            // 
+            this.my_hero_hp_label.AutoSize = true;
+            this.my_hero_hp_label.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.my_hero_hp_label.Location = new System.Drawing.Point(76, 57);
+            this.my_hero_hp_label.Name = "my_hero_hp_label";
+            this.my_hero_hp_label.Size = new System.Drawing.Size(24, 16);
+            this.my_hero_hp_label.TabIndex = 0;
+            this.my_hero_hp_label.Text = "HP";
+            // 
+            // my_hero_name_label
+            // 
+            this.my_hero_name_label.AutoSize = true;
+            this.my_hero_name_label.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.my_hero_name_label.Location = new System.Drawing.Point(20, 18);
+            this.my_hero_name_label.Name = "my_hero_name_label";
+            this.my_hero_name_label.Size = new System.Drawing.Size(80, 16);
+            this.my_hero_name_label.TabIndex = 0;
+            this.my_hero_name_label.Text = "Hero Name";
             // 
             // my_bat_card_7
             // 
@@ -241,6 +264,7 @@
             this.my_bat_card_7.Size = new System.Drawing.Size(73, 90);
             this.my_bat_card_7.TabIndex = 0;
             this.my_bat_card_7.UseVisualStyleBackColor = true;
+            this.my_bat_card_7.Click += new System.EventHandler(this.my_bat_card_Click);
             // 
             // my_bat_card_6
             // 
@@ -249,6 +273,7 @@
             this.my_bat_card_6.Size = new System.Drawing.Size(73, 90);
             this.my_bat_card_6.TabIndex = 0;
             this.my_bat_card_6.UseVisualStyleBackColor = true;
+            this.my_bat_card_6.Click += new System.EventHandler(this.my_bat_card_Click);
             // 
             // my_bat_card_5
             // 
@@ -257,6 +282,7 @@
             this.my_bat_card_5.Size = new System.Drawing.Size(73, 90);
             this.my_bat_card_5.TabIndex = 0;
             this.my_bat_card_5.UseVisualStyleBackColor = true;
+            this.my_bat_card_5.Click += new System.EventHandler(this.my_bat_card_Click);
             // 
             // my_bat_card_4
             // 
@@ -265,6 +291,7 @@
             this.my_bat_card_4.Size = new System.Drawing.Size(73, 90);
             this.my_bat_card_4.TabIndex = 0;
             this.my_bat_card_4.UseVisualStyleBackColor = true;
+            this.my_bat_card_4.Click += new System.EventHandler(this.my_bat_card_Click);
             // 
             // my_bat_card_3
             // 
@@ -273,6 +300,7 @@
             this.my_bat_card_3.Size = new System.Drawing.Size(73, 90);
             this.my_bat_card_3.TabIndex = 0;
             this.my_bat_card_3.UseVisualStyleBackColor = true;
+            this.my_bat_card_3.Click += new System.EventHandler(this.my_bat_card_Click);
             // 
             // my_bat_card_2
             // 
@@ -281,59 +309,81 @@
             this.my_bat_card_2.Size = new System.Drawing.Size(73, 90);
             this.my_bat_card_2.TabIndex = 0;
             this.my_bat_card_2.UseVisualStyleBackColor = true;
+            this.my_bat_card_2.Click += new System.EventHandler(this.my_bat_card_Click);
             // 
             // my_bat_card_1
             // 
+            this.my_bat_card_1.BackColor = System.Drawing.Color.Transparent;
             this.my_bat_card_1.Location = new System.Drawing.Point(164, 412);
             this.my_bat_card_1.Name = "my_bat_card_1";
             this.my_bat_card_1.Size = new System.Drawing.Size(73, 90);
             this.my_bat_card_1.TabIndex = 0;
-            this.my_bat_card_1.UseVisualStyleBackColor = true;
+            this.my_bat_card_1.UseVisualStyleBackColor = false;
+            this.my_bat_card_1.Click += new System.EventHandler(this.my_bat_card_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(286, 126);
+            this.panel2.Controls.Add(this.opp_crystal_num);
+            this.panel2.Controls.Add(this.opp_hero_hp);
+            this.panel2.Controls.Add(this.opp_hero_name);
+            this.panel2.Controls.Add(this.opp_crystal_num_label);
+            this.panel2.Controls.Add(this.opp_hero_hp_label);
+            this.panel2.Controls.Add(this.opp_hero_name_label);
+            this.panel2.Location = new System.Drawing.Point(252, 108);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(302, 97);
+            this.panel2.Size = new System.Drawing.Size(336, 138);
             this.panel2.TabIndex = 1;
             // 
-            // textBox4
+            // opp_crystal_num
             // 
-            this.textBox4.Location = new System.Drawing.Point(96, 57);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 21);
-            this.textBox4.TabIndex = 1;
+            this.opp_crystal_num.Location = new System.Drawing.Point(111, 100);
+            this.opp_crystal_num.Name = "opp_crystal_num";
+            this.opp_crystal_num.Size = new System.Drawing.Size(58, 21);
+            this.opp_crystal_num.TabIndex = 108;
             // 
-            // textBox5
+            // opp_hero_hp
             // 
-            this.textBox5.Location = new System.Drawing.Point(96, 17);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(146, 21);
-            this.textBox5.TabIndex = 1;
+            this.opp_hero_hp.Location = new System.Drawing.Point(111, 57);
+            this.opp_hero_hp.Name = "opp_hero_hp";
+            this.opp_hero_hp.Size = new System.Drawing.Size(58, 21);
+            this.opp_hero_hp.TabIndex = 1;
             // 
-            // label4
+            // opp_hero_name
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(63, 57);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 16);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "HP";
+            this.opp_hero_name.Location = new System.Drawing.Point(111, 17);
+            this.opp_hero_name.Name = "opp_hero_name";
+            this.opp_hero_name.Size = new System.Drawing.Size(156, 21);
+            this.opp_hero_name.TabIndex = 1;
             // 
-            // label5
+            // opp_crystal_num_label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(7, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 16);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Hero Name";
+            this.opp_crystal_num_label.AutoSize = true;
+            this.opp_crystal_num_label.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.opp_crystal_num_label.Location = new System.Drawing.Point(2, 99);
+            this.opp_crystal_num_label.Name = "opp_crystal_num_label";
+            this.opp_crystal_num_label.Size = new System.Drawing.Size(96, 16);
+            this.opp_crystal_num_label.TabIndex = 106;
+            this.opp_crystal_num_label.Text = "Crystal num";
+            // 
+            // opp_hero_hp_label
+            // 
+            this.opp_hero_hp_label.AutoSize = true;
+            this.opp_hero_hp_label.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.opp_hero_hp_label.Location = new System.Drawing.Point(74, 57);
+            this.opp_hero_hp_label.Name = "opp_hero_hp_label";
+            this.opp_hero_hp_label.Size = new System.Drawing.Size(24, 16);
+            this.opp_hero_hp_label.TabIndex = 0;
+            this.opp_hero_hp_label.Text = "HP";
+            // 
+            // opp_hero_name_label
+            // 
+            this.opp_hero_name_label.AutoSize = true;
+            this.opp_hero_name_label.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.opp_hero_name_label.Location = new System.Drawing.Point(18, 18);
+            this.opp_hero_name_label.Name = "opp_hero_name_label";
+            this.opp_hero_name_label.Size = new System.Drawing.Size(80, 16);
+            this.opp_hero_name_label.TabIndex = 0;
+            this.opp_hero_name_label.Text = "Hero Name";
             // 
             // opp_bat_card_7
             // 
@@ -343,6 +393,7 @@
             this.opp_bat_card_7.Size = new System.Drawing.Size(73, 90);
             this.opp_bat_card_7.TabIndex = 0;
             this.opp_bat_card_7.UseVisualStyleBackColor = false;
+            this.opp_bat_card_7.Click += new System.EventHandler(this.opp_bat_card_Click);
             // 
             // opp_bat_card_6
             // 
@@ -351,6 +402,7 @@
             this.opp_bat_card_6.Size = new System.Drawing.Size(73, 90);
             this.opp_bat_card_6.TabIndex = 0;
             this.opp_bat_card_6.UseVisualStyleBackColor = true;
+            this.opp_bat_card_6.Click += new System.EventHandler(this.opp_bat_card_Click);
             // 
             // opp_bat_card_5
             // 
@@ -359,6 +411,7 @@
             this.opp_bat_card_5.Size = new System.Drawing.Size(73, 90);
             this.opp_bat_card_5.TabIndex = 0;
             this.opp_bat_card_5.UseVisualStyleBackColor = true;
+            this.opp_bat_card_5.Click += new System.EventHandler(this.opp_bat_card_Click);
             // 
             // opp_bat_card_4
             // 
@@ -367,6 +420,7 @@
             this.opp_bat_card_4.Size = new System.Drawing.Size(73, 90);
             this.opp_bat_card_4.TabIndex = 0;
             this.opp_bat_card_4.UseVisualStyleBackColor = true;
+            this.opp_bat_card_4.Click += new System.EventHandler(this.opp_bat_card_Click);
             // 
             // opp_bat_card_3
             // 
@@ -375,6 +429,7 @@
             this.opp_bat_card_3.Size = new System.Drawing.Size(73, 90);
             this.opp_bat_card_3.TabIndex = 0;
             this.opp_bat_card_3.UseVisualStyleBackColor = true;
+            this.opp_bat_card_3.Click += new System.EventHandler(this.opp_bat_card_Click);
             // 
             // opp_bat_card_2
             // 
@@ -383,6 +438,7 @@
             this.opp_bat_card_2.Size = new System.Drawing.Size(73, 90);
             this.opp_bat_card_2.TabIndex = 0;
             this.opp_bat_card_2.UseVisualStyleBackColor = true;
+            this.opp_bat_card_2.Click += new System.EventHandler(this.opp_bat_card_Click);
             // 
             // opp_bat_card_1
             // 
@@ -391,6 +447,7 @@
             this.opp_bat_card_1.Size = new System.Drawing.Size(73, 90);
             this.opp_bat_card_1.TabIndex = 0;
             this.opp_bat_card_1.UseVisualStyleBackColor = true;
+            this.opp_bat_card_1.Click += new System.EventHandler(this.opp_bat_card_Click);
             // 
             // groupBox1
             // 
@@ -453,6 +510,7 @@
             this.opp_hand_card_10.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_10.TabIndex = 0;
             this.opp_hand_card_10.UseVisualStyleBackColor = true;
+            this.opp_hand_card_10.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // opp_hand_card_3
             // 
@@ -461,6 +519,7 @@
             this.opp_hand_card_3.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_3.TabIndex = 0;
             this.opp_hand_card_3.UseVisualStyleBackColor = true;
+            this.opp_hand_card_3.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // opp_hand_card_4
             // 
@@ -469,6 +528,7 @@
             this.opp_hand_card_4.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_4.TabIndex = 0;
             this.opp_hand_card_4.UseVisualStyleBackColor = true;
+            this.opp_hand_card_4.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // opp_hand_card_5
             // 
@@ -477,6 +537,7 @@
             this.opp_hand_card_5.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_5.TabIndex = 0;
             this.opp_hand_card_5.UseVisualStyleBackColor = true;
+            this.opp_hand_card_5.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // opp_hand_card_6
             // 
@@ -485,6 +546,7 @@
             this.opp_hand_card_6.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_6.TabIndex = 0;
             this.opp_hand_card_6.UseVisualStyleBackColor = true;
+            this.opp_hand_card_6.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // opp_hand_card_7
             // 
@@ -493,6 +555,7 @@
             this.opp_hand_card_7.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_7.TabIndex = 0;
             this.opp_hand_card_7.UseVisualStyleBackColor = true;
+            this.opp_hand_card_7.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // opp_hand_card_8
             // 
@@ -501,6 +564,7 @@
             this.opp_hand_card_8.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_8.TabIndex = 0;
             this.opp_hand_card_8.UseVisualStyleBackColor = true;
+            this.opp_hand_card_8.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // opp_hand_card_9
             // 
@@ -509,6 +573,7 @@
             this.opp_hand_card_9.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_9.TabIndex = 0;
             this.opp_hand_card_9.UseVisualStyleBackColor = true;
+            this.opp_hand_card_9.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // my_hand_card_2
             // 
@@ -517,6 +582,7 @@
             this.my_hand_card_2.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_2.TabIndex = 0;
             this.my_hand_card_2.UseVisualStyleBackColor = true;
+            this.my_hand_card_2.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // my_hand_card_3
             // 
@@ -525,6 +591,7 @@
             this.my_hand_card_3.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_3.TabIndex = 0;
             this.my_hand_card_3.UseVisualStyleBackColor = true;
+            this.my_hand_card_3.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // my_hand_card_4
             // 
@@ -533,6 +600,7 @@
             this.my_hand_card_4.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_4.TabIndex = 0;
             this.my_hand_card_4.UseVisualStyleBackColor = true;
+            this.my_hand_card_4.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // my_hand_card_5
             // 
@@ -541,6 +609,7 @@
             this.my_hand_card_5.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_5.TabIndex = 0;
             this.my_hand_card_5.UseVisualStyleBackColor = true;
+            this.my_hand_card_5.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // my_hand_card_6
             // 
@@ -549,6 +618,7 @@
             this.my_hand_card_6.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_6.TabIndex = 0;
             this.my_hand_card_6.UseVisualStyleBackColor = true;
+            this.my_hand_card_6.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // my_hand_card_7
             // 
@@ -557,6 +627,7 @@
             this.my_hand_card_7.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_7.TabIndex = 0;
             this.my_hand_card_7.UseVisualStyleBackColor = true;
+            this.my_hand_card_7.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // my_hand_card_8
             // 
@@ -565,6 +636,7 @@
             this.my_hand_card_8.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_8.TabIndex = 0;
             this.my_hand_card_8.UseVisualStyleBackColor = true;
+            this.my_hand_card_8.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // my_hand_card_1
             // 
@@ -573,6 +645,7 @@
             this.my_hand_card_1.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_1.TabIndex = 0;
             this.my_hand_card_1.UseVisualStyleBackColor = true;
+            this.my_hand_card_1.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // opp_hand_card_2
             // 
@@ -581,6 +654,7 @@
             this.opp_hand_card_2.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_2.TabIndex = 0;
             this.opp_hand_card_2.UseVisualStyleBackColor = true;
+            this.opp_hand_card_2.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // my_hand_card_9
             // 
@@ -589,6 +663,7 @@
             this.my_hand_card_9.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_9.TabIndex = 0;
             this.my_hand_card_9.UseVisualStyleBackColor = true;
+            this.my_hand_card_9.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // my_hand_card_10
             // 
@@ -597,6 +672,7 @@
             this.my_hand_card_10.Size = new System.Drawing.Size(73, 90);
             this.my_hand_card_10.TabIndex = 0;
             this.my_hand_card_10.UseVisualStyleBackColor = true;
+            this.my_hand_card_10.Click += new System.EventHandler(this.my_hand_card_Click);
             // 
             // opp_hand_card_1
             // 
@@ -605,6 +681,7 @@
             this.opp_hand_card_1.Size = new System.Drawing.Size(73, 90);
             this.opp_hand_card_1.TabIndex = 0;
             this.opp_hand_card_1.UseVisualStyleBackColor = true;
+            this.opp_hand_card_1.Click += new System.EventHandler(this.opp_hand_card_Click);
             // 
             // next_turn
             // 
@@ -622,6 +699,7 @@
             this.my_hero.Size = new System.Drawing.Size(220, 97);
             this.my_hero.TabIndex = 5;
             this.my_hero.UseVisualStyleBackColor = true;
+            this.my_hero.Click += new System.EventHandler(this.my_hero_Click);
             // 
             // opp_hero
             // 
@@ -630,6 +708,7 @@
             this.opp_hero.Size = new System.Drawing.Size(220, 97);
             this.opp_hero.TabIndex = 5;
             this.opp_hero.UseVisualStyleBackColor = true;
+            this.opp_hero.Click += new System.EventHandler(this.opp_hero_Click);
             // 
             // my_bat_card_1_hp
             // 
@@ -1927,15 +2006,15 @@
         private System.Windows.Forms.Button my_bat_card_6;
         private System.Windows.Forms.Button my_bat_card_7;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label my_hero_name_label;
+        private System.Windows.Forms.TextBox my_hero_name;
+        private System.Windows.Forms.TextBox my_hero_hp;
+        private System.Windows.Forms.Label my_hero_hp_label;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox opp_hero_hp;
+        private System.Windows.Forms.TextBox opp_hero_name;
+        private System.Windows.Forms.Label opp_hero_hp_label;
+        private System.Windows.Forms.Label opp_hero_name_label;
         private System.Windows.Forms.Button opp_bat_card_7;
         private System.Windows.Forms.Button opp_bat_card_6;
         private System.Windows.Forms.Button opp_bat_card_5;
@@ -2074,6 +2153,10 @@
         private System.Windows.Forms.Label opp_hand_card_1_crystal;
         private System.Windows.Forms.Label opp_hand_card_1_attack;
         private System.Windows.Forms.Label opp_hand_card_1_hp;
+        private System.Windows.Forms.TextBox my_crystal_num;
+        private System.Windows.Forms.Label my_crystal_num_label;
+        private System.Windows.Forms.TextBox opp_crystal_num;
+        private System.Windows.Forms.Label opp_crystal_num_label;
     }
 }
 
