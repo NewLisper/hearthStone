@@ -44,6 +44,7 @@ namespace hearthStone
                 Card enemy = enemies[Indexenemy];
                 minion.Hp -= enemy.Attack;
                 enemy.Hp -= minion.Attack;
+                minion.Sleep = true;
                 if (minion.Hp <= 0) minions.RemoveAt(Indexminion);
                 if (enemy.Hp <= 0) enemies.RemoveAt(Indexenemy);
             }

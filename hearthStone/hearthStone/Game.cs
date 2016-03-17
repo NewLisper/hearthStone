@@ -8,15 +8,17 @@ namespace hearthStone
 {
     class Game
     {
-        public int Crystal1 { get; private set; }
-        public int Crystal2 { get; private set; }
+        public int Crystal1 { get; set; }
+        public int Crystal2 { get; set; }
         public int Timelimit1 { get; private set; }
         public int Timelimit2 { get; private set; }
         public Tuple<Hero,Hero> THero { get; }
         public Tuple<List<Card>,List<Card>> THand { get; }
         public Tuple<List<Card>, List<Card>> TLibrary { get; }
         public Tuple<List<Card>, List<Card>> TGround { get; }
-        public bool Whichuser { get; private set; } //true indicate first user, false indicate second user
+        public bool Whichuser { get; set; } //true indicate first user, false indicate second user
+        public bool Rerendering { get; set; }
+        public List<IAction> Actionpool { get; private set; }
 
         public Game(Tuple<List<Card>, List<Card>> tlibrary)
         {
@@ -29,45 +31,61 @@ namespace hearthStone
             TLibrary = tlibrary;
             TGround = new Tuple<List<Card>, List<Card>>(new List<Card>(), new List<Card>());
             Whichuser = true;
+            Rerendering = false;
+            Actionpool = new List<IAction>();
         }
     
-       private void initcard(List<Card> library, List<Card> hand, List<Card> ground)
+       
+       public bool player1win()
        {
-            Card card = library[0];
-            hand.Add(card);
-            library.RemoveAt(0);
-            ground.ForEach(minion => minion.Sleep = false);
+            return THero.Item1.Hp >0 && THero.Item2.Hp <= 0;
        }
 
-       public void nextround()
+       public bool player2win()
        {
-            int timelimit;
-            if (Whichuser)
-            {
-                initcard(TLibrary.Item1, THand.Item1, TGround.Item1);
-                if(Crystal1 < 10) Crystal1++;
-                timelimit = Timelimit1;
-            }
-            else
-            {
-                initcard(TLibrary.Item2, THand.Item2, TGround.Item2);
-                if (Crystal2 < 10) Crystal2++;
-                timelimit = Timelimit2;
-            }
-         
-
-            Whichuser = !Whichuser;
+            return THero.Item2.Hp > 0 && THero.Item1.Hp <= 0;
+       }
+       
+       public void init()
+       {
+            Card card = TLibrary.Item1[0];
+            THand.Item1.Add(card);
+            TLibrary.Item1.RemoveAt(0);
+            Crystal1++;
+            Rerendering = true;
        }
 
+        public void loop()
+       {
+            while (!player1win() && !player2win())
+            {
+                if (Actionpool.Any())
+                {
+                    IAction action = Actionpool[0];
+                    Actionpool.RemoveAt(0);
+                    action.perform();
+                    Rerendering = true;
+                }
+            }
+        }
+   
         static void Main(string[] args)
         {
             InitCardsIntoXml initCardsIntoXml = new InitCardsIntoXml();
             List<Card> card1 = initCardsIntoXml.getAllCards();
             List<Card> card2 = initCardsIntoXml.getAllCards();
-            Console.WriteLine(card2.Count());
             Game game = new Game(new Tuple<List<Card>, List<Card>>(card1,card2));
-            Hero h1 = new Hero(30, "LL");
-            Console.WriteLine(h1.Hp);
+            // init GUi thread
+            game.init();
+            game.loop();
+            if (game.player1win())
+            {
+                // print player1 win
+            }
+            else if (game.player2win())
+            {
+                // print player2 win
+            }
             Console.ReadKey(true);
         }
 
