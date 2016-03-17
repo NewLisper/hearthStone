@@ -1,0 +1,9 @@
+E:\project\C#\hearthStone_GUI\hearthStone_GUI\bin\Debug\hearthStone_GUI.exe.config
+E:\project\C#\hearthStone_GUI\hearthStone_GUI\bin\Debug\hearthStone_GUI.exe
+E:\project\C#\hearthStone_GUI\hearthStone_GUI\bin\Debug\hearthStone_GUI.pdb
+E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.HearthStoneInterface.resources
+E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.Properties.Resources.resources
+E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.csproj.GenerateResource.Cache
+E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.exe
+E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.pdb
+E:\project\C#\hearthStone_GUI\hearthStone_GUI\obj\Debug\hearthStone_GUI.csprojResolveAssemblyReference.cache
